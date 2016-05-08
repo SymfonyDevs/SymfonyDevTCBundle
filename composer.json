@@ -1,5 +1,5 @@
 {
-    "name": "SymfonyDevs/SymfonyDevTCBundle",
+    "name": "symfony-devs/symfony-dev-tc-bundle",
     "description": "SymfonyDev.com Technicle Challenge Symfony bundle",
     "type": "symfony-bundle",
     "license": "proprietary",
