@@ -1,0 +1,30 @@
+{% extends "SymfonyDevTCBundle::layout.html.twig" %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-sm-12" id="formContainer">
+            {% include "SymfonyDevTCBundle:Payment:update.html.twig" %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent () }}
+    <script language="javascript">
+
+        $("body").on("submit", "form", function(event) {
+            var url = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $(this).serialize(),
+                success: function(data)
+                {
+                    $('#formContainer').html(data);
+                }
+            });
+            event.preventDefault();
+        });
+
+    </script>
+{% endblock javascripts %}

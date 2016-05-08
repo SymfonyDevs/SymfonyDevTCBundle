@@ -1,0 +1,8 @@
+tc_payment_index:
+    path:     /
+    defaults: { _controller: SymfonyDevTCBundle:Payment:index }
+
+tc_payment_update:
+    path:     /update
+    defaults: { _controller: SymfonyDevTCBundle:Payment:update }
+    methods:  [POST]

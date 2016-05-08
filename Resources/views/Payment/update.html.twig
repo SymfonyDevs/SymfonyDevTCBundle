@@ -1,0 +1,12 @@
+{% form_theme form 'SymfonyDevTCBundle::_formTheme.html.twig' %}
+
+{{ form_start(form, {'attr': {'class':'form-horizontal'} }) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.postCode) }}
+    {{ form_row(form.type) }}
+    {{ form_row(form.creditCardNumberPlain) }}
+    <div class="col-sm-offset-2">
+        <input id="btnSave" type="submit" class="btn btn-success" value="Save" />
+        <a href="{{ path('tc_payment_index') }}" class="btn btn-default">Reset</a>
+    </div>
+{{ form_end(form) }}

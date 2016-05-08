@@ -1,0 +1,4 @@
+services:
+#    symfony_dev_tc.example:
+#        class: SymfonyDev\TCBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
